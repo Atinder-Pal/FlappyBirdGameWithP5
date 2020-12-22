@@ -4,7 +4,7 @@ class Pipe {
         this.bottom = random(height/2);
         this.x = width;
         this.pipeWidth = 20;
-        this.speed = 1;
+        this.speed = 2;
     }
 
     show(){
