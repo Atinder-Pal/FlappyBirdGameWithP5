@@ -11,3 +11,10 @@ function draw() {
   bird.update();
   bird.show();
 }
+
+function keyPressed(){
+  if(key == ' '){
+    //console.log("SPACE");
+    bird.up();
+  }
+}
