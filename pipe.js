@@ -16,4 +16,11 @@ class Pipe {
     update(){
         this.x -= this.speed;
     }
+
+    offscreen(){
+        if(this.x < - this.pipeWidth) 
+            return true;
+        else
+            return false;        
+    }
 }
