@@ -7,6 +7,14 @@ class Pipe {
         this.speed = 2;
     }
 
+    hits(bird){
+        if(bird.y < this.top || bird.y > height - this.botton){
+            if(bird.x > this.x && bird.x < this.x + this.pipeWidth)
+               return true; 
+        }
+        return false;
+    }
+
     show(){
         fill(255);
         rect(this.x, 0, this.pipeWidth, this.top);
